@@ -19,9 +19,6 @@ def set_seed(seed):
     print(f"Random seed set as {seed}")
 
 def train_and_get_results(data, model, p, lr, seed, splits, weight_decay=5e-4):
-    final_test_accuracies = []
-    final_train_accuracies = []
-    final_val_accuracies = []  # New list to store validation accuracies
 
     def train():
         model.train()
